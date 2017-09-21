@@ -2,5 +2,6 @@
 $calledByInit = true;
 session_start();
 include("classAutoLoader.php");
-$db = new db();
+$DB = new DB();
 $FormValidation = new FormValidation();
+$Util = new Util();

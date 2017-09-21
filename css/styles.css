@@ -1,160 +1,114 @@
-/* 
-    Created on : Jun 19, 2017, 9:28:48 PM
-    Author     : Dave Packer
-
-colors:
-text:#281e0f;
-background:#fff3d3; 
-brown: #4f140b;
-dark-brown:
+/*
+lime green: #47c442;
+blue: #4286f4;
 */
 
-
-body{
-   background: white url("images/canvas_background.jpeg") no-repeat right bottom;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   background-attachment: fixed;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color:#281e0f;
-	min-width: 700px;
-	/*color:red;*/
-}
-#header{
-	
-}
-
-.clear{
-	clear:both;
-}
-
-.leftCol{
-	float:left;
-	width: 49%;
-	display:inline-block;
-}
-
-.rightCol{
-	float:right;
-	width: 49%;
-	display:inline-block;
-}
-
-.col-content{
-	padding: 20px;
-}
-
-ol {
-	list-style-type: none;
-}
-
-.centerMe{
-   text-align: center;
-}
-
-a:hover, button:hover{
-   /*color:#4f140b;*/
-   background-color: #42130b;
-   font-weight: bold;
-}
-
-a:active, button:active{
-   /*color:#fff3d3;*/
-   /*background-color: #4f140b;*/
-}
-
-a:active, button:focus{
-   outline: 0;
-}
-
-a, button{
-   display:inline-block;
-   padding:10px;
-   background-color: #4f140b;
-   color:#fff3d3;
-   margin: 5px;
-   border-radius: 10px;
-   box-shadow: 0 2px 4px 0 #281e0f; 
-   text-decoration: none;
+/*Start Clear stuff */
+button, input[type="submit"], input[type="reset"] {
+   background: none;
+   color: inherit;
+   border: none;
+   font: inherit;
+   cursor: pointer;
+   outline: inherit;
 }
 
 a{
-   border-width: 2px;
-   border-style: outset;
-   border-color: buttonface;
-   border-image: initial;
+	color:inherit;
+	text-decoration: none;
 }
 
-/*text input*/
+/*End Clear stuff */
 
-/*From https://css-tricks.com/styling-texty-inputs-only/*/
-input[type=text] {
-   border: 3px solid white; 
-   border-radius: 5px;
-   -webkit-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
-   -moz-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
-   box-shadow: 
-     inset 0 0 8px  rgba(0,0,0,0.1),
-           0 0 16px rgba(0,0,0,0.1); 
-   padding: 5px;
-   background: rgba(255,255,255,0.5);
-   margin: 0 0 10px 0;
+body{
+	background-image: url("/css/images/background.jpeg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+	font-family: arial;
+}
+
+#header{
+	width: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	height: 100px;
+	background-color:rgba(256,256,256,.8);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display:grid;
+	grid-template-columns: auto 300px;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"#header-left #header-right";
+}
+
+#headerQuote{
+	margin:10px;
+}
+
+#header-right{
+	padding-top: 50px;
 }
 
 
-
-/*Sorter:*/
-body.dragging, body.dragging * {
-  cursor: move !important;
+#headerOptions {
+	list-style-type:none;
 }
 
-.dragged {
-  position: absolute;
-  opacity: 0.5;
-  z-index: 2000;
+#headerOptions  li{
+	display:inline;
+	padding: 10px;
 }
 
-ol.sortableList li.placeholder {
-  position: relative;
-  /** More li styles **/
-}
-ol.sortableList li.placeholder:before {
-  position: absolute;
-  content: "";
-  width: 0;
-   height: 0;
-   margin-top: -5px;
-   left: 20px;
-   /*left: 0px;*/
-   top: 0px;
-   border: 5px solid transparent;
-   border-left-color: red;
-   border-right: none; 
-  
+#headerOptions  li:hover{
+	color:#47c442;
+	cursor: pointer;
 }
 
-ol.sortableList {
-   padding-left: 0px;
+.content{
+	/*padding-top: 200px;*/
+	margin: 125px auto 200px auto;
+	width: 70%;
+	background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+	padding: 10px;
 }
 
-.checkBoxFamily{
-   padding-left:0px;
-   margin-left:20px;
+
+/* FORM ELEMENT */
+
+form{
+	text-align: left;
+	padding:20px;
 }
 
-/*.firstLevelFamily{
-   padding-left: 0px;
-   margin-left: 0px;
-}*/
-.active{
-   border: 1px solid #281e0f;
+input[type=text], textArea{
+	padding:10px;
+	margin:5px;
 }
 
-i{
-	cursor: default;
+.elementBottom input[type=radio]{
+	margin-left: 15px;
+}
+
+.formElement{
+	margin:10px 0px 10px 0px;
+}
+
+button {
+	border: 3px solid #4286f4;
+	border-radius: 10px;
+	padding: 10px;
+	transition: background-color .3s;
+}
+
+button:hover{
+	background-color:#4286f4;
+}
+
+button:active{
+	background-color:#47c442;
 }

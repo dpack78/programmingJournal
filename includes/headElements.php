@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>Check Box</title>
+<title>Programming Journal</title>
 	
 <?php //Links: ?>
 <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
