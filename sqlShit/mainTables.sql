@@ -1,5 +1,6 @@
 CREATE TABLE `entry`(
 	`entryID` int(11) NOT NULL AUTO_INCREMENT,
+	`projectID` int(11) NOT NULL,
 	`date` datetime, 
 	`pageName` varchar(256) DEFAULT NULL,
 	`currentLineNumber` varchar(256) DEFAULT NULL,
@@ -40,4 +41,11 @@ CREATE TABLE `goal_response` (
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO goal_response (goal_responseName) VALUES ("A"),("B"),("F");
+
+CREATE TABLE `project` (
+	`projectID` int(11) NOT NULL AUTO_INCREMENT,
+	`projectName` varchar(64) NOT NULL,
+	PRIMARY KEY (`projectID`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 

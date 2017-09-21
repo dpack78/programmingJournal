@@ -73,8 +73,8 @@ body{
 	width: 70%;
 	background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   text-align: center;
-	padding: 10px;
+   text-align: left;
+	padding: 30px;
 }
 
 
@@ -82,7 +82,7 @@ body{
 
 form{
 	text-align: left;
-	padding:20px;
+	padding:0px;
 }
 
 input[type=text], textArea{
@@ -100,7 +100,7 @@ input[type=text], textArea{
 
 button {
 	border: 3px solid #4286f4;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	padding: 10px;
 	transition: background-color .3s;
 }
@@ -111,4 +111,20 @@ button:hover{
 
 button:active{
 	background-color:#47c442;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table th {
+	color:grey;
+	font-weight: normal;
+	border-bottom: 1px solid #bccbe2;
+	padding: 10px;
+}
+
+table tr td {
+	text-align: center;
+	padding: 10px;
 }
