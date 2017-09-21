@@ -4,7 +4,7 @@
  *
  * @author Dave Packer
  */
-class db extends dbConnection{
+class DB extends dbConnection{
 	public $link;
 	public function __construct(){
 		parent::__construct();
