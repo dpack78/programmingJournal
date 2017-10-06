@@ -24,4 +24,6 @@ $tomorrowsGoals = (isset($a_in['tomorrowsGoals'])) ? $a_in['tomorrowsGoals'] : n
 $Entry = new Entry($DB);
 $newEntryID = $Entry->saveEntry($pageName, $lineNumber, $brainDump, $accomplished, $tomorrowsGoals);
 
-$Entry->saveGoalResponses($_POST['goal']);
+$Entry->saveGoalResponses($newEntryID,$_POST['goal']);
+header("location:/home/index.php");
+exit();

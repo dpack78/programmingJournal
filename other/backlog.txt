@@ -1,0 +1,38 @@
+Backlog:
+
+add different projects.
+	CRUD different projects. Switch Between projects in journal
+	Goals for each project. 
+	Text boxes for each project.
+	Training boxes on how to use.
+	
+
+add login and seperate users.
+	Account creation
+	logged in loggout out pages.
+	logging in and out.
+
+Reporting:
+	paginated index of past entries. 
+		Search entry by date.
+		summary to click on and see more info.
+
+CRUD goals.
+Mark which goals are active.
+
+Chart of given goals and their progress.
+
+Make goal edit boxes text editable.
+
+Can't access classes pages.
+
+Different random Backgrounds.
+
+mobile friendly
+
+deploy on some server.
+white-list who can access.
+
+
+
+
